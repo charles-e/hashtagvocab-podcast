@@ -1,4 +1,4 @@
-
+![HT Vocab Logo](htvocab.jpg)
 ## Hashtag Vocab - Extraordinary English & Words Worth Watching
 
 My podcast to share interesting Engish language vocabulary
