@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>Buzzsprout</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <link rel="stylesheet" media="all" href="https://assets.buzzsprout.com/assets/layouts/application-8a1ce7db473534ff846a386bc19e7a0f3bd6c7bc2a8cfd36170ccc0b5cccdb0e.css" data-turbo-track="reload" />
+  <link rel="stylesheet" media="print" href="https://assets.buzzsprout.com/assets/layouts/print-7b3c16b9bfe80020f01af9112275fd643e3b971a76dc17f98d96f7bcb0070fd0.css" data-turbo-track="reload" />
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="bfR43LMFcszebcwiUHC/7vxjFIf2R5CmveSmW1clTIn/6F4x4vR4KwoxdCwiO+7JfDV04wz2khwBLR5U3l6q5A==" />
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- :defaults -->
+  <script src="https://assets.buzzsprout.com/packs/js/rollbar-4f0e839be0a6cd09f796.js" defer="defer" data-turbo-track="reload"></script>
+  <script src="https://js.stripe.com/v3/" defer></script>
+  <script src="https://assets.buzzsprout.com/javascripts/datepicker/js/datepicker.js"></script>
+  <script src="https://assets.buzzsprout.com/assets/application-18d88fe83fd143cbe4fa6712ebd13d8c62469a2126b7291ee599a8648e2385fb.js" crossorigin="anonymous" defer="defer" data-turbo-track="reload"></script>
+  <script src="https://assets.buzzsprout.com/packs/js/application-dda0c2bd23bc06d7dc2b.js" crossorigin="anonymous" defer="defer" data-turbo-track="reload"></script>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-344771-7', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" media="all" href="https://assets.buzzsprout.com/assets/partials/base/common/common_ie-a96e54389ae136d404b4f2508d56eef966afb55d86024c381d8866203423056d.css" />
+  <![endif]-->
+  
+  <style>.turbo-progress-bar { height: 5px; background-color: #8B61B5;}</style>
+</head>
+<body class="admin transcripts_index">
+<!--  <p id="system-note"></p> -->
+
+
+<div id="working" style="display:none">Working...</div>
+<header data-controller="modal partial" data-partial-url="/1560542/podcasts.js">
+  <a href="/1560542/episodes" class="buzz_logo" >Buzzsprout</a>
+  <div id="masthead">
+    <ul id="super_nav" aria-label="Global links">
+      <li class="super-nav--my-podcasts"><a href="#" data-action="modal#show partial#fetchAndInsert">My Podcasts</a></li>
+      <li class="super-nav--my-profile"><a href="/my/profile?podcast_id=1560542">My Profile</a></li>
+      <li class="super-nav--resources"><a href="/1560542/resources">Resources</a></li>
+      <li class="super-nav--help"><a href="/1560542/podcast/support">Help</a></li>
+      <li><a data-action="channel#closeConnection" data-turbo="false" href="/logout?podcast_id=1560542">Log Out</a></li>
+    </ul>
+  </div><!-- /masthead -->
+  <div id="main_nav">
+    <div id="image">
+      <a href="/1560542/episodes">
+        <img alt="Hashtag Vocab - Extraordinary English &amp; Words Worth Watching Podcast Artwork Image" src="https://www.buzzsprout.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCQmN1d1FFPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--a81f3a17d4cfbe9851a446ec58ebd72b3d0c03d0/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2QzNKbGMybDZaVWtpRFRZd01IZzJNREJlQmpzR1ZEb01aM0poZG1sMGVVa2lDMk5sYm5SbGNnWTdCbFE2QzJWNGRHVnVkRWtpRERZd01IZzJNREFHT3daVU9neHhkV0ZzYVhSNWFWVTZEMk52Ykc5eWMzQmhZMlZKSWdselVrZENCanNHVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--8a9b4b1bc245a46b538f72d4d9b2ab0a7fbe8ac1/art.jpg?podcast_id=1560542" />
+      </a>
+      <div id="update_artwork">
+        <a href="/1560542/podcast/edit">Update Artwork</a>
+      </div>
+    </div><!-- /image -->
+
+    <div id="podcast_title">
+      <a href="#"  id="podcast_title_link" data-action="modal#show partial#fetchAndInsert" class="podcast_switch relative">Hashtag Vocab - Extraordinary English &amp; Words Wor...</a><!-- /title -->
+    </div>
+
+    <ul id="nav" aria-label="Main Navigation">
+      <li><a href="/1560542/episodes" title="Episodes" class="first nav--episodes">Episodes</a></li>
+      <li><a href="/1560542/podcast/embed" title="Players" class="nav--players">Players</a></li>
+      <li><a href="/1560542/website/background/edit" title="Website" class="nav--website">Website</a></li>
+      <li><a href="/1560542/directories" title="Directories" class="nav--directories">Directories</a></li>
+      <li><a href="/1560542/monetization" title="Resources" class="nav--monetization">Monetization</a></li>
+      <li><a href="/1560542/podcast/edit" title="Podcast Settings" class="nav--podcast-settings">Podcast Settings</a></li>
+      <li><a href="/1560542/stats" title="Stats" class="last nav--stats">Stats</a></li>
+    </ul>
+  </div><!-- /masthead -->
+  <label for="toggle" class="mobile-menu">
+     <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+     </ul>
+     <span class="mobile-menu__text">menu</span>
+  </label>
+  <input class="mobile-nav__check" type="checkbox" id="toggle">
+  <div class="mobile-nav" aria-label="Mobile Navigation">
+    <a href="/1560542/episodes">Episodes</a>
+    <a href="/1560542/directories" title="Directories">Directories</a>
+    <a href="/1560542/monetization" title="Resources">Monetization</a>
+    <a href="/1560542/podcast/edit" title="Podcast Settings">Podcast Settings</a>
+    <a href="/1560542/stats" title="Stats">Stats</a>
+    <a href="#" class="mobile-nav__alt" data-action="modal#show partial#fetchAndInsert">My Podcasts</a>
+    <a href="/my/profile?podcast_id=1560542" class="mobile-nav__alt">My Profile</a>
+    <a href="/1560542/resources" title="Resources" class="mobile-nav__alt" >Resources</a>
+
+    <a class="mobile-nav__alt" href="/1560542/podcast/support">Help</a>
+    <a data-turbo="false" class="mobile-nav__alt" href="/logout?podcast_id=1560542">Log Out</a>
+
+  </div><!-- /top_nav -->
+
+
+  <div class="modal-takeover hide" data-target="modal.modalWindow" data-action="click->modal#hideSelf">
+    <div class="modal-large">
+      <div type="button" class="modal-large--close" data-action="click->modal#hide">×</div>
+      <h1 class="modal-xlarge--title">My Podcasts</h1>
+      <div class="my-podcasts__list">
+        <div data-target="partial.container"></div>
+        <div class="hide loading-icon" data-target="partial.loadingIcon"></div>
+        <div class="my-podcasts__create">
+          <a href="/1560542/podcast/new" class="btn btn--large btn--green">Create a New Podcast</a>
+          <p class="my-podcasts__create--note">Note: Each podcast is on its own plan.</p>
+        </div>
+      </div>
+    </div><!-- /modal-large -->
+  </div><!-- /modal-takeover -->
+
+</header>
+
+
+
+<div id="content">
+
+-----BEGIN ZETTELKASTEN, ESSAY, STRUGGLE, CONCINNITY-----
+    <cite>Speaker 1:</cite>
+  <time>0:01</time>
+  <p>I&#39;m Charles and you are listening to episode 10 of hashtag vocab, extraordinary English and words worth watching my weekly podcast to spend a fleeting 10 minutes sharing the words that I find fascinating. Exquisite juicy, too good to pass up. Feel free to like and subscribe wherever you get your podcasts. People ask me, Charles, how is it that you go about putting together your podcast? Where do you find the inspiration? What is your process? Good question. Let&#39;s walk through this together. First off, you should know that my goal is to produce one episode each week. I&#39;m shooting for 10 minutes of content covering three, possibly four words. Ideally the whole episode is finished by Thursday so that I can relax and do my other jobs for a couple of days before Monday rolls around again, but on Monday step one of my process is to look through my Ziegfeld casting , for words, that look fun. And that is our first word. Not fun, but Zelle Casten . Certainly my horrible German accent is your clue that this is a, that this is in fact a German word. It combines Seto , which means slip or note and Castin meaning box, which implies that Hayes is that felt Cason is a box where you stick your notes. Let&#39;s not bother with the spelling of this since it&#39;s German and you are unlikely to use it too frequently also because it implies that you are making notes, organizing them for some sort of long-term project research or maybe a novel. My notes have no such lofty purpose. So a better word for the place I keep. My notes is commonplace book and commonplace book is just another way of saying scrapbook, me being me. Of course, my commonplace book is not actually a book. It&#39;s really a piece of software. I use a program called obsidian link in the show notes to keep my commonplace book. I like obsidian because the notes are stored as plain textiles or almost plain text. Obsidian allows you to use markdown a coding, which is also plaintext to format your notes, furthermore OpCity and lets you link your notes and organize them in a variety of ways, which is why you can use obsidian for much more than just storing vocabulary words. And additionally, because the files are simply texts and because they are not stored in some cloud server or in a database, it means that they are mine. And I can switch over to some new software that might strike my fancy any day now with no hassle right this second, I use obsidian and this is my official plug for it. Getting back to my process Monday, having found one or two words that strike my fancy phase. Two of the process is the essay phase essay E S S a Y not too hard to spell. I&#39;m going with two dictionary definitions. The first is quote, a written composition of moderate length, exploring a particular issue or subject unquote definition two , which is now rare. Quote, an attempt unquote a try. I&#39;ll be it that this second definition is uncommon. It is the one that corresponds best with the etymology. It comes from the French OSI . My French is horrible, but it means trial attempt assay like measuring gold intern that comes from late Latin exaggerate them , which is weighing, which in turn comes from an older Latin exit [inaudible] to drive out to exact, to examine exit dearie comes from X, which means out and a day, which is to set in motion. So we&#39;re driving something out, we&#39;re testing it, we&#39;re weighing it. But really as everybody who has completed high school knows an essay is a test where you write down something that looks like a couple of paragraphs and the teacher grades it. He who writes the most wins. At least that&#39;s how it always seemed to me. However, in the case of this podcast essay means that I attempt to write something about each word that starts with looking up each word in which an airy to get the definition in etymology. I use which generic , because I don&#39;t think they&#39;re going to Sue me for ripping them off and beyond that the content of the essay varies depending upon the word and how much there is to say. One of the challenges to writing for this podcast is that I must eventually read my script and speak it fluently. I have learned that I must read things back to myself aloud as I write. And if I don&#39;t do that, I will find problem sentences when I&#39;m finally really trying to record myself. The next phase of podcast production is the struggle. In fact, as I write this paragraph, I am in the struggle phase of scripting the podcast and glancing at [inaudible] . I noticed that the word struggle has quite a bit of etymology struggle. S T R U G G L E struggle is both a verb and a noun proactionary it means quote a contortion of the body in an attempt to escape or to perform a difficult task unquote or definition to quote strife contention, great effort, unquote, which  scenario  also provides two alternative etymologies. First etymology says that struggle comes from middle English, throw Glenn struggling, struggling, and his quote of obscure origin, unquote I&#39;ll spare you the many similar sounding words from scotch German, Dutch, and even Indo European that are plausibly related. The alternative etymology is that it derives the base of struggle. That is strug from the old Norse through there. I think which means arrogance pride, spitefulness ill-will or maybe this is me speculating here. Struggle is just a word that sounds right for what it describes, which would mean that this is sort of Mata except not literally describing a sound, just a feeling anyway, what struggling looks like for producing this podcast is first. I have to read what I&#39;ve written, if that&#39;s okay. I search in Google for anything that might tie the words together. I also look at the etymology to see what might be related to the words. I&#39;m trying to find some theme, a connection, a hook that will make the show interesting, compelling. I might decide that I chose the wrong words and simply begin again. Another thing that I&#39;ll do is get myself breaks that often allows me. When I come back to have some new inspiration, sometimes I record a paragraph and decide that it just has bad flow. So I have to go back, rewrite it, try again. Other times I find out that while it&#39;s a good paragraph, it&#39;s an interesting word. It just doesn&#39;t fit the show. And I will put it aside for some other episode, but whatever happens as I am making the product that is this podcast, it does not occur without struggle, struggle. Pardon my accent now, what am I struggling to produce? The final product has the following requirements. The audio quality must be decent that I have verified my facts, that my pronunciation is clear that my sentences are grammatically correct. That my words flow, that my ideas are clear. And on top of all that I require the podcast to have a certain consistency continuities , C O N C I N N I T Y conservatee is an adjective proactionary quote, the harmonious reinforcement of the various parts of a work of art. And it points out that consent city is used mainly in discussion of music, which Canary also helpfully tells us that this term was coined in 1531 by sir Thomas Elliot . It comes from Latin [inaudible] , which means skillfully put together my own introduction to this word came from and I looked it up for the podcast page 113 of Neil  Stephenson&#39;s  1995 book, the diamond age in this passage expressing admiration for a cleverly  designed  device quote, there is an ineffable quality to some technology described by its creators as  considerateness  or technically  sweet  or  a nice  hack signs that it was made with great care by one who  is  not merely motivated, but inspired. It is the difference between an engineer and a hacker unquote. And I read that sometime ago. It stuck with me as I was a software engineer at the time, and I aspired to be a good one. I wanted all of my code to display consent city . And now that I am podcasting, conservatee means that beyond the basics of making a decent recording, my ideas have my own spin. Those ideas must be part of a structure. They must cohere without consent without coherence. Then this podcast merely comprises a series of workshops definitions. Now , what is the point of that? By the way, listen to episode one for comprise that&#39;s it for this episode, our words have been set they&#39;ll cast in an organized collection of notes, essay writing about a topic or less frequently to try struggle, strife contention, great effort to perform a task conservatee describes a harmonious composition or a well constructed piece of art. Thanks to this episode, you have some insight into the creation of my podcast from Zell Casten to consented to us . I hope final product. The only knowledge that you are missing is the actual audio engineering or my pass&#39; flubs and lip smacks are removed. Another insight you could obtain is that producing this podcast is a fair amount of work, which is conflicting with other tasks of my daily life and of earning a living for that reason. I am calling this episode, the official end of season one, I&#39;m not going to tease a season two at this point, because frankly, there may not be a season two , whether I pick it up again, will depend upon any number of factors, not least of which is whether or not anybody besides myself, once a season two , that&#39;s it. You can send your comments, suggestions, and or demand for a season two to <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="640c05170c100503270c0516080117240c05170c100503120b0705064a070b09">[email&#160;protected]</a> . Please, if you enjoy my show, you can like and subscribe using your favorite podcast app so that your fellow word lovers can more easily discover us audio&#39;s for now. This podcast was recorded in my office and powered by power naps at crate foam fond memories of books by Bruce Sterling and my word scrapbook implemented in the wonderful software obsidian, no leather was harmed in the production of this recording.</p>
+
+-----END ZETTELKASTEN, ESSAY, STRUGGLE, CONCINNITY-----
+
+
+  </div><!-- /content -->
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
